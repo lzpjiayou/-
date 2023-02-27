@@ -66,3 +66,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //解析并返回 json格式的数据，这是常用的方法。内部会查看content-type，只有是正确的content-type默认是application/json才进入这个中间件解析处理。
 app.use(bodyParser.json());
+
+引入passport来验证token，初始化
+const passport = require("passport");
+在config文件夹下创建passport.js
+require("./config/passport")(passport);
+app.use(passport.initialize());
