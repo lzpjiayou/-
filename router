@@ -1,2 +1,33 @@
 
 在server.js同目录下创建router文件夹来存放路由模块user和profiles
+1.在user和profiles分别引入路由模块
+
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+分别创建Schema
+const UserSchema = new Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  avatar: {
+    type: String
+  },
+  identity: {
+    type: String,
+    required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  }
+});
