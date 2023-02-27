@@ -1,1 +1,2 @@
 
+在server.js同目录下创建router文件夹来存放路由模块user和profiles
