@@ -54,3 +54,4 @@ mongoose
     console.log(err);
   });
 
+在server.js同目录下创建model文件夹来存放对应的数据库变量user和profiles
